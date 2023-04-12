@@ -19,7 +19,7 @@ cli_args = sys.argv[1:]
 dut_ip = cli_args[0]
 dut_user = cli_args[1]
 dut_pass = cli_args[2]
-route_table = cli_args[3]
+interval_end = int(cli_args[3])
 
 
 '''DUT Login parameters'''
@@ -61,7 +61,7 @@ def main():
         fpc_count = len(fpc_online_list)
         # Get FPC utilization over a specified interval period
         interval_current = 0
-        interval_end = 20
+        #interval_end = 20
         fpc_cpu_util = []
         fpc_mem_util = []
         fpc_mem_heap = []
