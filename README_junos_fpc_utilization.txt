@@ -1,13 +1,16 @@
 # juniper_automation_fpc_util_avg
 This tool obtains a list of FPCs currently online and returns the following over a user supplied interval period:
 
--CPU Utilization
+FPC CPU Utilization
 1. Maximum CPU Utilization %
 2. Average CPU Utilization %
 3. Average Total Memory (in MB)
 4. Average Memory Heap %
 5. Average Memory Buffer %
 
+
+Requirements:
+The Paramiko SSH library is required for connectivity to the target device.
 
 
 Usage:
