@@ -5,12 +5,12 @@ import sys
 import time
 from pprint import pprint
 import argparse
-from ssh_connectivity import Device
-from junos_sys_chassis import get_chassis_fpc
-from junos_sys_chassis import parse_chassis_fpc_output
-from junos_sys_chassis import sweep_status
-from backend_functions import determine_list_average
-from backend_functions import determine_list_highest_value
+from lib_ssh_connectivity import Device
+from lib_junos_sys_chassis import get_chassis_fpc
+from lib_junos_sys_chassis import parse_chassis_fpc_output
+from lib_junos_sys_chassis import sweep_status
+from lib_backend_functions import determine_list_average
+from lib_backend_functions import determine_list_highest_value
 
 
 
