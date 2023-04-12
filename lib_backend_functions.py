@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-#import re
 
-#@keyword("CCL Python Determine List Avg")
 def determine_list_highest_value(list_name):
     list_max = max(list_name)
     return list_max
