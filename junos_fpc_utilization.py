@@ -61,7 +61,6 @@ def main():
         fpc_count = len(fpc_online_list)
         # Get FPC utilization over a specified interval period
         interval_current = 0
-        #interval_end = 20
         fpc_cpu_util = []
         fpc_mem_util = []
         fpc_mem_heap = []
@@ -91,14 +90,6 @@ def main():
                     fpc_mem_util.append(int(cpu_total_mem))
                     fpc_mem_heap.append(int(cpu_mem_util_heap))
                     fpc_mem_buffer.append(int(cpu_mem_util_buf))
-                    # fpc_cpu_util.append(fpc_dict['fpc_cpu_util_pct'])
-                    # fpc_mem_util.append(fpc_dict['fpc_cpu_mem_dram_mb'])
-                    # fpc_mem_heap.append(fpc_dict['fpc_cpu_mem_util_heap'])
-                    # fpc_mem_buffer.append(fpc_dict['fpc_cpu_mem_util_buf'])
-                    # print(fpc_cpu_util)
-                    # print(fpc_mem_util)
-                    # print(fpc_mem_heap)
-                    # print(fpc_mem_buffer)
             interval_current += 1
         print(f'########################################################')
         print(f'######################## SUMMARY #######################')
